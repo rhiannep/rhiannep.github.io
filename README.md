@@ -1,14 +1,16 @@
-**Dev**
+**Develop 👩🏽‍💻**
 ```
 middleman
 ```
 
-**Build**
+**Build 🔨**
 ```
 middleman build
 ```
 
-**Deploy**
+**Deploy ✨**
 ```
 middleman gh_pages
 ```
+
+Treat `develop` like `master`, `master` is reserved for gh pages deploys cos
