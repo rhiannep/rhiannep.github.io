@@ -44,3 +44,10 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :livereload
+
+activate :gh_pages do |gh_pages|
+  gh_pages.remote = 'https://github.com/rhiannep/rhiannep.github.io.git'
+  gh_pages.branch = 'master'
+end
