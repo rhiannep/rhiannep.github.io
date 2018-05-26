@@ -51,3 +51,9 @@ activate :gh_pages do |gh_pages|
   gh_pages.remote = 'https://github.com/rhiannep/rhiannep.github.io.git'
   gh_pages.branch = 'master'
 end
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d --color',
+  source: ".tmp/dist",
+  latency: 1
